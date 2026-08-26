@@ -1,0 +1,11 @@
+Bandit8 - Bandit9:
+
+Instructions : 
+    The password stored in the file data.txt and is the only line of text that occurs only once.
+
+Command : 
+	ssh username@address -p portnumber 
+    sort data.txt | uniq -u (sort the file in order to have the duplicated lines immediatly following themselves for the use of "uniq -u" to erase the duplicated lines)
+
+Solution : 
+EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl

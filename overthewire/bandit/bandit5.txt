@@ -1,0 +1,11 @@
+Bandit4 - Bandit5:
+
+Instructions : 
+	password stored in the only human-readable file in the inhere directory.
+Command : 
+	ssh username@address -p portnumber 
+	file inhere/* | grep ASCII (ASCII for human readable)
+    cat inhere/-filename
+
+Solution : 
+password => 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG

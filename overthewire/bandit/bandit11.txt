@@ -1,0 +1,11 @@
+Bandit10 - Bandit11:
+
+Instructions : 
+    The password stored in the file data.txt, which contains base64 encoded data.
+
+Command : 
+	ssh username@address -p portnumber 
+    base64 -d data.txt (-d for decode)
+
+Solution :
+pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro

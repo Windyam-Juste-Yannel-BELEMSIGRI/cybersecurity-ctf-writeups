@@ -1,0 +1,11 @@
+Bandit2 - Bandit3:
+
+Instructions : 
+	password stored in a "--spaces in this filename--" spaced file
+Command : 
+	ssh username@address -p portnumber 
+	cat <  "--spaces in this filename--" or 
+    more < "--spaces in this filename--"
+
+Solution : 
+password => 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME

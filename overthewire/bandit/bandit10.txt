@@ -1,0 +1,11 @@
+Bandit9 - Bandit10:
+
+Instructions : 
+    The password stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+Command : 
+	ssh username@address -p portnumber 
+    strings data.txt | grep ==== (strings to make the file human readable)
+
+Solution : 
+B0s2khmbT9u0geKuOoVGW3JZKhndE3BG

@@ -1,0 +1,16 @@
+Bandit5 - Bandit6:
+
+Instructions : 
+    The password stored in a file somewhere under the inhere directory and has all of the following properties:
+
+    human-readable
+    1033 bytes in size
+    not executable
+
+Command : 
+	ssh username@address -p portnumber 
+	find -type f -size 1033c -not -executable (or)
+	find -type f -size 1033c ! -executable  
+
+Solution : 
+password => pXa26xhMWaC2SvDotA4r9EgZkulOeSBW

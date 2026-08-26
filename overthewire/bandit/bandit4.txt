@@ -1,0 +1,11 @@
+Bandit3 - Bandit4:
+
+Instructions : 
+	password stored in a hidden file in the inhere directory
+Command : 
+	ssh username@address -p portnumber 
+	ls -a (To get the hidden file name)
+	cat filename
+
+Solution : 
+password => xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq

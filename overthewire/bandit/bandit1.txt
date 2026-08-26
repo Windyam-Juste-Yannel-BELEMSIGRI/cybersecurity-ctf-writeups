@@ -1,0 +1,11 @@
+Bandit0 - bandit1:
+
+Instructions : 
+	remote username : bandit0
+	user password : bandit0
+	ssh 
+Command : 
+	ssh username@address -p portnumber 
+	
+Solution : 
+Password => 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
