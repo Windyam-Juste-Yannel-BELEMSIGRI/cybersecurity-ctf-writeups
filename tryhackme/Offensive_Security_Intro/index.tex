@@ -1,0 +1,227 @@
+\documentclass[11pt,a4paper]{book}
+
+% --- Packages essentiels ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm, top=2.5cm, bottom=3cm}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.1}
+\usepackage{lmodern}
+
+% --- Couleurs ---
+\usepackage{xcolor}
+\definecolor{bleuFonce}{HTML}{1A3A5C}
+\definecolor{bleuClair}{HTML}{4A90D9}
+\definecolor{gris}{HTML}{78909C}
+\definecolor{grisPale}{HTML}{F5F7FA}
+\definecolor{vert}{HTML}{388E3C}
+\definecolor{orange}{HTML}{EF6C00}
+\definecolor{rouge}{HTML}{C62828}
+\definecolor{violet}{HTML}{7B1FA2}
+\definecolor{jaune}{HTML}{FBC02D}
+\definecolor{rose}{HTML}{FFEBEE}
+\definecolor{noir}{HTML}{000000}
+
+% --- Mathematiques ---
+\usepackage{amsmath,amssymb}
+
+% --- Tableaux ---
+\usepackage{booktabs,array}
+
+% --- Listes ---
+\usepackage{enumitem}
+\setlist{itemsep=0.2em, topsep=0.4em}
+
+% --- Boites colorees ---
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% --- Dessins ---
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+
+% --- Liens cliquables ---
+\usepackage[colorlinks=true, linkcolor=bleuFonce, urlcolor=bleuClair]{hyperref}
+
+% --- Code source ---
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{grisPale},
+    frame=single, rulecolor=\color{gris},
+    breaklines=true, tabsize=4,
+    keywordstyle=\bfseries\color{bleuFonce},
+    commentstyle=\color{gris}\itshape,
+    stringstyle=\color{vert},
+    numbers=left, numberstyle=\tiny\color{gris},
+    xleftmargin=1.5em, framexleftmargin=1.5em
+}
+
+\lstdefinelanguage{cisco}{
+    sensitive=true,
+    morekeywords={enable,configure,terminal,hostname,interface,ip,address,no,shutdown,show,brief},
+    morecomment=[l]{!},
+    morestring=[b]"
+}
+
+% --- En-tetes et pieds de page ---
+\usepackage{fancyhdr}
+\setlength{\headheight}{22pt}
+\raggedbottom
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{gris}{\leftmark}}
+\fancyhead[R]{\small\textcolor{gris}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{gris}\leaders\hrule height 0.4pt\hfill}}
+
+% --- Titres de sections ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries\color{bleuFonce}}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}{\normalfont\Large\bfseries\color{bleuFonce}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\normalfont\large\bfseries\color{bleuClair}}{\thesubsection}{1em}{}
+
+% --- Table des matieres ---
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\bfseries\color{bleuFonce}}
+\renewcommand{\cftsecfont}{\color{gris}}
+
+% =============================================================================
+%  BOITES COLOREES (faciles a utiliser)
+% =============================================================================
+
+% Style commun
+\tcbset{
+    maBoite/.style={
+        enhanced, breakable, arc=3pt, boxrule=1pt,
+        left=10pt, right=10pt, top=8pt, bottom=8pt,
+        fonttitle=\bfseries\sffamily,
+        attach boxed title to top left={yshift=-3mm, xshift=5mm},
+        boxed title style={arc=2pt, boxrule=0.5pt, left=5pt, right=5pt},
+        before skip=1em, after skip=1em
+    }
+}
+
+% --- Boites generales ---
+\newtcolorbox{definition}{maBoite, colback=bleuClair!10, colframe=bleuClair, title=Definition}
+\newtcolorbox{concept}{maBoite, colback=violet!10, colframe=violet, title=Concept cle}
+\newtcolorbox{important}{maBoite, colback=orange!10, colframe=orange, title=Important}
+\newtcolorbox{astuce}{maBoite, colback=vert!10, colframe=vert, title=Astuce}
+\newtcolorbox{remarque}{maBoite, colback=gris!15, colframe=gris, title=Remarque}
+\newtcolorbox{exemple}{maBoite, colback=jaune!15, colframe=jaune!80!noir, title=Exemple}
+\newtcolorbox{erreur}{maBoite, colback=rouge!10, colframe=rouge, title=Erreur frequente}
+\newtcolorbox{attention}{maBoite, colback=rouge!15, colframe=rouge!80!noir, title=Attention}
+\newtcolorbox{bonnepratique}{maBoite, colback=bleuFonce!10, colframe=bleuFonce, title=Bonne pratique}
+\newtcolorbox{resume}{maBoite, colback=gris!20, colframe=gris!80!noir, title=Resume}
+\newtcolorbox{question}{maBoite, colback=vert!10, colframe=vert!80!noir, title=Question}
+\newtcolorbox{reponse}{maBoite, colback=bleuClair!10, colframe=bleuClair!80!noir, title=Reponse}
+\newtcolorbox{exercice}{maBoite, colback=jaune!10, colframe=jaune!60!noir, title=Exercice}
+\newtcolorbox{solution}{maBoite, colback=vert!10, colframe=vert!60!noir, title=Solution}
+\newtcolorbox{laboratoire}{maBoite, colback=violet!10, colframe=violet!80!noir, title=Laboratoire}
+\newtcolorbox{objectif}{maBoite, colback=bleuClair!10, colframe=bleuClair, title=Objectifs}
+\newtcolorbox{commande}{maBoite, colback=bleuFonce!90, colframe=bleuFonce, coltitle=white, coltext=white, title=Commande}
+\newtcolorbox{syntaxe}{maBoite, colback=grisPale, colframe=gris, title=Syntaxe}
+\newtcolorbox{information}{maBoite, colback=bleuClair!10, colframe=bleuClair, title=Information}
+\newtcolorbox{reference}{maBoite, colback=gris!10, colframe=gris!80!noir, title=Reference}
+
+% --- Boites specialisees ---
+\newtcolorbox{commandecisco}{maBoite, colback=bleuFonce!10, colframe=bleuFonce, title=Commande Cisco IOS}
+\newtcolorbox{sortiecisco}{maBoite, colback=white, colframe=bleuFonce, title=Sortie Cisco IOS}
+\newtcolorbox{configcisco}{maBoite, colback=bleuFonce!10, colframe=bleuFonce, title=Configuration Cisco}
+\newtcolorbox{topologie}{maBoite, colback=white, colframe=bleuFonce, title=Topologie reseau}
+\newtcolorbox{commandelinux}{maBoite, colback=vert!10, colframe=vert!80!noir, title=Commande Linux}
+\newtcolorbox{terminal}{maBoite, colback=bleuFonce!80, colframe=bleuFonce, coltitle=white, coltext=white, title=Terminal}
+\newtcolorbox{scriptbash}{maBoite, colback=vert!10, colframe=vert!60!noir, title=Script Bash}
+\newtcolorbox{pythonbox}{maBoite, colback=bleuClair!10, colframe=bleuClair, title=Python}
+\newtcolorbox{definitionia}{maBoite, colback=violet!10, colframe=violet, title=Definition IA}
+\newtcolorbox{algorithme}{maBoite, colback=bleuFonce!10, colframe=bleuFonce, title=Algorithme}
+\newtcolorbox{architectureia}{maBoite, colback=violet!10, colframe=violet!80!noir, title=Architecture IA}
+\newtcolorbox{pipeline}{maBoite, colback=bleuClair!10, colframe=bleuClair, title=Pipeline}
+\newtcolorbox{prompt}{maBoite, colback=grisPale, colframe=gris, title=Prompt}
+
+% =============================================================================
+%  STYLES TIKZ POUR LES SCHEMAS
+% =============================================================================
+\tikzset{
+    routeur/.style={draw, circle, fill=bleuFonce, text=white, minimum size=1cm, font=\sffamily\bfseries},
+    switch/.style={draw, rectangle, fill=bleuClair, text=white, minimum size=0.8cm, font=\sffamily\bfseries},
+    pc/.style={draw, rectangle, rounded corners, fill=grisPale, minimum size=0.6cm, font=\sffamily\footnotesize},
+    nuage/.style={draw, cloud, cloud puffs=8, fill=grisPale, minimum size=1.2cm},
+    lien/.style={draw, gris, thick, -{Stealth[length=2mm]}},
+    flux/.style={draw, rectangle, fill=bleuClair!20, draw=bleuClair, minimum width=2cm, minimum height=0.8cm, font=\sffamily\small, align=center},
+    decision/.style={draw, diamond, fill=orange!20, draw=orange, minimum width=1.5cm, minimum height=1cm, font=\sffamily\small, align=center},
+    debut/.style={draw, rectangle, rounded corners=8pt, fill=bleuFonce, text=white, minimum width=2cm, minimum height=0.8cm, font=\sffamily\bfseries}
+}
+
+% =============================================================================
+%  COMMANDES SIMPLES
+% =============================================================================
+\newcommand{\ip}[1]{\texttt{\textcolor{bleuFonce}{#1}}}
+\newcommand{\cmd}[1]{\texttt{\textbf{#1}}}
+\newcommand{\fichier}[1]{\texttt{#1}}
+
+% =============================================================================
+%  DOCUMENT
+% =============================================================================
+\begin{document}
+% ---------------------------------------------------------------------------
+% PAGE DE TITRE
+% ---------------------------------------------------------------------------
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{2cm}
+{\Huge\sffamily\bfseries\color{bleuFonce} TryHackMe}\\[0.5em]
+{\Large\sffamily\color{gris} Offensive Security Intro}
+\vspace{1.5cm}
+
+\textcolor{bleuClair}{\rule{0.3\textwidth}{1.5pt}}
+
+\vspace{1.5cm}
+\begin{tabular}{rl}
+    \textcolor{gris}{\textbf{Auteur :}} & BELEMSIGRI Windyam Juste Yannel \\
+    \textcolor{gris}{\textbf{Version :}} & 1.0 \\
+    \textcolor{gris}{\textbf{Date :}} & \today \\
+\end{tabular}
+
+\vfill
+{\small\sffamily\color{gris} Document personnel de reference technique}
+\vspace{1cm}
+\end{center}
+\end{titlepage}
+
+% ---------------------------------------------------------------------------
+% TABLE DES MATIERES
+% ---------------------------------------------------------------------------
+\tableofcontents
+\newpage
+
+\section{Contexte}
+
+Dans le labs il est question d'un site qui se charge de la gestion des transferts d'argents 
+entre les clients d'une banque nommée \textcolor{red}{Fakebank}. La banque est vulnérable et l'objectif du labs est 
+d'exploiter cette vulnérabilité pour réaliser une transaction bancaire frauduleuse.
+
+\section{Réalisation}
+\subsection{Etape 1 : Vérification des pages du site avec la commande dirb}
+\textcolor{gray}{Que permet de faire la commande dirb ?}
+La commande \textcolor{red}{dirb} permet de scanner un site web pour découvrir des fichiers et répertoires cachés.
+C'est un outil de brutforce de repertoires et de fichiers sur serveur web.
+
+Son principe est simple :
+\begin{itemize}
+    \item On lui donne une URL
+    \item On lui donne un dictionnaire de mots (wordlist)
+    \item Il essai chaque mot comme nom de répertoire ou de fichier
+    \item Il regarde les réponses du serveur pour savoir si le répertoire ou le fichier existe (HTTP(200, 301, 403, 404, etc.))
+    \item Il affiche les résultats qui existent
+\end{itemize}
+
+\section{Limites}
+\textcolor{red}{dirb} est un outil ancien. Aujourd'hui, beaucoup de professionnels préfèrent des outils plus rapides comme Gobuster 
+ou Feroxbuster, qui exploitent davantage le parallélisme et offrent plus d'options.
+
+\end{document}
