@@ -1,12 +1,12 @@
-# OverTheWire — behemoth
+# OverTheWire, Behemoth
 
-Write-ups niveau par niveau. Un fichier `level0-1.md`, `level1-2.md`, etc. par niveau franchi.
+Pas commencé. Comme pour Bandit : un fichier par niveau (`level0-1.md`, `level1-2.md`...), avec le même plan :
 
-## Format recommandé par niveau
 ```markdown
-### Level N → N+1
-**Objectif** :
-**Commandes utilisées** :
-**Ce que j'ai appris** :
+# Behemoth, niveau N → N+1
+## Le but
+## Comment j'ai fait
+## Les commandes et ce qu'elles font vraiment
+## Autres façons de faire
+## À retenir
 ```
-

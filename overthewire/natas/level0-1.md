@@ -1,16 +1,16 @@
-# Natas — Niveau 0 → 1
+# Natas, niveau 0 → 1
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[Sommaire](README.md) · [Niveau suivant →](level1-2.md)
+[sommaire](README.md) · [niveau suivant](level1-2.md)

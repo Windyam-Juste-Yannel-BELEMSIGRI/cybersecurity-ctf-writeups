@@ -1,16 +1,16 @@
-# Natas — Niveau 15 → 16
+# Natas, niveau 15 → 16
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level14-15.md) · [Sommaire](README.md) · [Niveau suivant →](level16-17.md)
+[niveau précédent](level14-15.md) · [sommaire](README.md) · [niveau suivant](level16-17.md)

@@ -1,16 +1,16 @@
-# Bandit — Niveau 32 → 33
+# Bandit, niveau 32 → 33
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level31-32.md) · [Sommaire](README.md) · [Niveau suivant →](level33-34.md)
+[niveau précédent](level31-32.md) · [sommaire](README.md) · [niveau suivant](level33-34.md)

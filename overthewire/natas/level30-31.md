@@ -1,16 +1,16 @@
-# Natas — Niveau 30 → 31
+# Natas, niveau 30 → 31
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level29-30.md) · [Sommaire](README.md) · [Niveau suivant →](level31-32.md)
+[niveau précédent](level29-30.md) · [sommaire](README.md) · [niveau suivant](level31-32.md)

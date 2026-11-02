@@ -1,16 +1,16 @@
-# Bandit — Niveau 28 → 29
+# Bandit, niveau 28 → 29
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level27-28.md) · [Sommaire](README.md) · [Niveau suivant →](level29-30.md)
+[niveau précédent](level27-28.md) · [sommaire](README.md) · [niveau suivant](level29-30.md)

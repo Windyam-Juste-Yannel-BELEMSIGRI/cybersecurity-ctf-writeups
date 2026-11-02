@@ -1,47 +1,50 @@
-# 🛡️ Cybersecurity CTF Write-ups
+# Write-ups cybersécurité
 
-Write-ups et notes de progression sur les principales plateformes de pratique cybersécurité,
-organisés par plateforme puis par challenge/salle.
+Mes notes sur les challenges que je fais, rangées par plateforme. Je les écris pour pouvoir me relire : comment j'ai cherché, les commandes et ce qu'elles font, ce que j'aurais pu faire autrement.
 
-⚠️ **Règle perso** : je ne publie jamais un write-up avant d'avoir résolu le challenge moi-même,
-et je ne divulgue pas de flags actifs de plateformes qui l'interdisent (ex: HTB actif) — je respecte
-les conditions d'utilisation de chaque plateforme.
+Mes règles :
+- je n'écris un write-up qu'après avoir résolu le challenge moi-même ;
+- je respecte les conditions d'utilisation de chaque plateforme (pour Hack The Box, seulement les machines retirées).
 
-## 📂 Structure
+## Ce qu'il y a
 
-| Dossier | Contenu |
-|---|---|
-| `overthewire/bandit ... vortex/` | Write-ups OverTheWire, dans l'ordre de progression recommandé |
-| `tryhackme/` | Write-ups salles TryHackMe |
-| `hackthebox/` | Write-ups machines HTB (retirées uniquement) |
-| `picoctf/` | Write-ups PicoCTF |
-| `portswigger-academy/` | Labs Web Security Academy (PortSwigger) |
-| `root-me/` | Challenges Root-Me |
-| `cyberdefenders/` | Cas Blue Team (analyse d'incidents) |
-| `blueteamlabs/` | Labs BlueTeam Labs Online |
+| Dossier | Contenu | État |
+|---|---|---|
+| `overthewire/bandit/` | Bandit, un fichier par niveau | 0 → 21 fait |
+| `overthewire/natas/` | Natas (web) | pas commencé, fichiers prêts |
+| `overthewire/leviathan` ... `vortex/` | Les autres wargames | dossiers vides pour l'instant |
+| `tryhackme/` | Mes notes de salles, en LaTeX (+ PDF) | 4 salles |
+| `hackthebox/` | Machines retirées | rien encore |
+| `CyberOps_CISCO/` | Labs du cours CyberOps de Cisco | vide pour l'instant |
 
-## 🧭 Ordre recommandé OverTheWire
-1. Bandit → 2. Leviathan → 3. Narnia → 4. Krypton → 5. Natas → 6. Behemoth → 7. Utumno → 8. Maze → 9. Manpage → 10. Vortex
+Les salles TryHackMe faites : Defensive Security Intro, Offensive Security Intro, Search Skills, Linux Fundamentals Pt. 1. Chaque dossier a son `index.tex` et le `index.pdf` compilé.
 
-## 📝 Template de write-up
-Chaque challenge a son propre fichier `NOM-DU-CHALLENGE.md` avec la structure suivante :
+## Ordre pour OverTheWire
 
-\`\`\`markdown
+Bandit → Leviathan → Narnia → Krypton → Natas → Behemoth → Utumno → Maze → Manpage → Vortex
+
+## Plan d'un write-up
+
+```markdown
 # Nom du challenge
+## Le but
+## Comment j'ai fait
+## Les commandes et ce qu'elles font vraiment
+## Autres façons de faire
+## À retenir
+```
 
-## Objectif
-## Reconnaissance
-## Exploitation / Résolution
-## Résultat (flag obtenu — sans le divulguer si interdit)
-## Compétences acquises
-\`\`\`
+## Ce que je veux faire
 
-## ✅ Progression globale
-- [ ] OverTheWire terminé (10 wargames)
-- [ ] TryHackMe — chemin Junior Penetration Tester / SOC Level 1
-- [ ] PicoCTF terminé
-- [ ] PortSwigger Academy — labs "Apprentice" + "Practitioner"
-- [ ] Premières machines HTB retirées résolues
+- [ ] Finir Bandit (jusqu'au niveau 34)
+- [ ] Natas
+- [ ] Parcours TryHackMe SOC Level 1 (et Junior Penetration Tester)
+- [ ] PicoCTF
+- [ ] PortSwigger Web Security Academy (labs Apprentice puis Practitioner)
+- [ ] Root-Me
+- [ ] Côté blue team : CyberDefenders, Blue Team Labs Online
+- [ ] Premières machines HTB retirées
 
-## 📜 Licence
-Projet personnel d'apprentissage — MIT (hors contenu appartenant aux plateformes elles-mêmes)
+Les dossiers des plateformes pas encore commencées seront créés quand j'y serai.
+
+Licence MIT, sauf le contenu qui appartient aux plateformes.

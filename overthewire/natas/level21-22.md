@@ -1,16 +1,16 @@
-# Natas — Niveau 21 → 22
+# Natas, niveau 21 → 22
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level20-21.md) · [Sommaire](README.md) · [Niveau suivant →](level22-23.md)
+[niveau précédent](level20-21.md) · [sommaire](README.md) · [niveau suivant](level22-23.md)

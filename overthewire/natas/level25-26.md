@@ -1,16 +1,16 @@
-# Natas — Niveau 25 → 26
+# Natas, niveau 25 → 26
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level24-25.md) · [Sommaire](README.md) · [Niveau suivant →](level26-27.md)
+[niveau précédent](level24-25.md) · [sommaire](README.md) · [niveau suivant](level26-27.md)

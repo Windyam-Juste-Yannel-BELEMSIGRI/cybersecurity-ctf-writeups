@@ -1,9 +1,9 @@
-# Bandit — Niveau 12 → 13
+# Bandit, niveau 12 → 13
 
-## 🎯 Objectif
+## Le but
 `data.txt` est le **hexdump** d'un fichier **compressé plusieurs fois** avec différents formats. Remonter jusqu'au texte d'origine.
 
-## 🧭 Cheminement
+## Comment j'ai fait
 1. Le home n'est pas modifiable : je crée un dossier de travail temporaire et j'y copie le fichier.
 2. Un hexdump est une **représentation texte** des octets ; il faut d'abord reconstruire le fichier binaire.
 3. Ensuite, c'est une boucle :
@@ -12,8 +12,8 @@
    - je décompresse ;
    - je recommence jusqu'à obtenir « ASCII text ».
 
-## 🛠️ Commandes utilisées et leur vrai rôle
-| Commande | Rôle réel |
+## Les commandes et ce qu'elles font vraiment
+| Commande | Ce qu'elle fait |
 |---|---|
 | `mktemp -d` | Crée un répertoire au nom aléatoire dans `/tmp` et affiche son chemin. Évite les collisions avec les autres joueurs. |
 | `cp` / `mv` | Copier / déplacer **ou renommer** un fichier. |
@@ -23,16 +23,16 @@
 | `bzip2 -d` | Décompresse du bzip2. |
 | `tar -xf` | Extrait une archive tar. `tar` **regroupe** plusieurs fichiers en un, il ne compresse pas forcément. `-x` = extraire, `-f` = fichier. |
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 - `zcat` / `bzcat` : décompressent vers la sortie standard, sans se soucier de l'extension.
 - `7z x fichier` : sait ouvrir presque tous les formats.
 - `tar -xzf` / `tar -xjf` : extraction + décompression gzip/bzip2 en une seule étape.
 - Automatiser la boucle avec un petit script bash qui lit la sortie de `file` et choisit l'outil.
 
-## 📚 Ce que j'ai appris
+## À retenir
 - Différence entre **archive** (tar) et **compression** (gzip, bzip2, xz).
 - Toujours identifier un fichier avec `file` plutôt que de se fier à son nom.
 - Les hexdumps et `xxd`.
 
 ---
-[← Niveau précédent](level11-12.md) · [Sommaire](README.md) · [Niveau suivant →](level13-14.md)
+[niveau précédent](level11-12.md) · [sommaire](README.md) · [niveau suivant](level13-14.md)

@@ -1,16 +1,16 @@
-# Natas — Niveau 33 → 34
+# Natas, niveau 33 → 34
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level32-33.md) · [Sommaire](README.md)
+[niveau précédent](level32-33.md) · [sommaire](README.md)

@@ -1,16 +1,16 @@
-# Natas — Niveau 6 → 7
+# Natas, niveau 6 → 7
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level5-6.md) · [Sommaire](README.md) · [Niveau suivant →](level7-8.md)
+[niveau précédent](level5-6.md) · [sommaire](README.md) · [niveau suivant](level7-8.md)

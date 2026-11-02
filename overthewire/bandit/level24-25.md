@@ -1,16 +1,16 @@
-# Bandit — Niveau 24 → 25
+# Bandit, niveau 24 → 25
 
-> 🚧 **Pas encore résolu.** Ce fichier sera complété une fois le niveau terminé.
+Pas encore fait.
 
-## 🎯 Objectif
+## Le but
 
-## 🧭 Cheminement
+## Comment j'ai fait
 
-## 🛠️ Commandes utilisées et leur vrai rôle
+## Les commandes et ce qu'elles font vraiment
 
-## 🔁 Alternatives possibles
+## Autres façons de faire
 
-## 📚 Ce que j'ai appris
+## À retenir
 
 ---
-[← Niveau précédent](level23-24.md) · [Sommaire](README.md) · [Niveau suivant →](level25-26.md)
+[niveau précédent](level23-24.md) · [sommaire](README.md) · [niveau suivant](level25-26.md)
