@@ -29,9 +29,9 @@ Un fichier par niveau (`levelN-(N+1).md`). Je note la démarche, les commandes e
 | [18 → 19](level18-19.md) | fait |
 | [19 → 20](level19-20.md) | fait |
 | [20 → 21](level20-21.md) | fait |
-| [21 → 22](level21-22.md) | écrit, à refaire moi-même |
-| [22 → 23](level22-23.md) | écrit, à refaire moi-même |
-| [23 → 24](level23-24.md) | écrit, à refaire moi-même |
+| [21 → 22](level21-22.md) | fait |
+| [22 → 23](level22-23.md) | fait |
+| [23 → 24](level23-24.md) | fait |
 | [24 → 25](level24-25.md) | à faire |
 | [25 → 26](level25-26.md) | à faire |
 | [26 → 27](level26-27.md) | à faire |
