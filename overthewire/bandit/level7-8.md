@@ -1,7 +1,7 @@
 # Bandit, niveau 7 → 8
 
 ## Le but
-Le mot de passe est dans `data.txt`, sur la ligne qui contient le mot **millionth**.
+Le mot de passe est dans `data.txt`, sur la ligne qui contient le mot millionth.
 
 ## Comment j'ai fait
 1. `data.txt` est énorme (des milliers de lignes) : impossible à lire en entier.
@@ -15,7 +15,7 @@ Le mot de passe est dans `data.txt`, sur la ligne qui contient le mot **milliont
 
 ## Autres façons de faire
 - `grep -w millionth data.txt` : mot entier uniquement.
-- `awk '/millionth/ {print $2}' data.txt` : affiche **seulement** la 2ᵉ colonne de la ligne trouvée.
+- `awk '/millionth/ {print $2}' data.txt` : affiche seulement la 2ᵉ colonne de la ligne trouvée.
 - `sed -n '/millionth/p' data.txt`.
 - Dans `less data.txt`, taper `/millionth` pour rechercher.
 

@@ -1,7 +1,7 @@
 # Bandit, niveau 5 → 6
 
 ## Le but
-Trouver, quelque part sous `inhere` (avec beaucoup de sous-dossiers), le fichier qui est à la fois **lisible par un humain**, **de 1033 octets** et **non exécutable**.
+Trouver, quelque part sous `inhere` (avec beaucoup de sous-dossiers), le fichier qui est à la fois lisible par un humain, de 1033 octets et non exécutable.
 
 ## Comment j'ai fait
 1. Il y a trop de dossiers pour chercher à la main : c'est un travail pour `find`, qui sait combiner plusieurs critères.
@@ -12,7 +12,7 @@ Trouver, quelque part sous `inhere` (avec beaucoup de sous-dossiers), le fichier
 | Commande | Ce qu'elle fait |
 |---|---|
 | `find inhere -type f` | Parcourt récursivement l'arborescence. `-type f` = fichiers ordinaires seulement (pas les dossiers). |
-| `-size 1033c` | Taille exacte. ⚠️ Le suffixe **`c` = octets** (*characters*). Sans suffixe, l'unité par défaut est le **bloc de 512 octets**, une erreur classique. `+N` = plus grand, `-N` = plus petit. |
+| `-size 1033c` | Taille exacte. ⚠️ Le suffixe `c` = octets (*characters*). Sans suffixe, l'unité par défaut est le bloc de 512 octets, une erreur classique. `+N` = plus grand, `-N` = plus petit. |
 | `! -executable` ou `-not -executable` | `!` inverse le test qui suit. `-executable` teste si l'utilisateur courant a le droit d'exécution. |
 
 ## Autres façons de faire

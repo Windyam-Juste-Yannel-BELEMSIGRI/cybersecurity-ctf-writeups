@@ -1,7 +1,7 @@
 # Bandit, niveau 14 → 15
 
 ## Le but
-Envoyer le mot de passe du niveau actuel au **port 30000** de `localhost` pour recevoir le suivant.
+Envoyer le mot de passe du niveau actuel au port 30000 de `localhost` pour recevoir le suivant.
 
 ## Comment j'ai fait
 1. Un service écoute en TCP sur le port 30000 de la machine elle-même (`localhost`).

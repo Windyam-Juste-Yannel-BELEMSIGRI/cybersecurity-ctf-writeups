@@ -1,16 +1,16 @@
 # Bandit, niveau 18 → 19
 
 ## Le but
-Le mot de passe est dans `readme`, mais le `.bashrc` a été modifié pour **déconnecter** dès la connexion SSH.
+Le mot de passe est dans `readme`, mais le `.bashrc` a été modifié pour déconnecter dès la connexion SSH.
 
 ## Comment j'ai fait
-1. `.bashrc` est un script exécuté automatiquement par **bash** au démarrage d'un shell interactif. Ici il contient un `exit`.
-2. Je n'ai pas besoin d'un shell interactif bash : je peux soit demander un **autre shell** qui ne lit pas `.bashrc`, soit demander à SSH d'**exécuter directement une commande**.
+1. `.bashrc` est un script exécuté automatiquement par bash au démarrage d'un shell interactif. Ici il contient un `exit`.
+2. Je n'ai pas besoin d'un shell interactif bash : je peux soit demander un autre shell qui ne lit pas `.bashrc`, soit demander à SSH d'exécuter directement une commande.
 
 ## Les commandes et ce qu'elles font vraiment
 | Commande | Ce qu'elle fait |
 |---|---|
-| `ssh -t bandit18@... -p 2220 /bin/sh` | Ce qui suit l'hôte est la commande à lancer à la place du shell par défaut. `/bin/sh` (souvent *dash*) ne lit pas `.bashrc`, donc pas de déconnexion. `-t` force l'allocation d'un **pseudo-terminal**, indispensable pour avoir un shell interactif utilisable. |
+| `ssh -t bandit18@... -p 2220 /bin/sh` | Ce qui suit l'hôte est la commande à lancer à la place du shell par défaut. `/bin/sh` (souvent *dash*) ne lit pas `.bashrc`, donc pas de déconnexion. `-t` force l'allocation d'un pseudo-terminal, indispensable pour avoir un shell interactif utilisable. |
 | `cat readme` | Une fois dans `sh`, on lit le fichier normalement. |
 
 ## Autres façons de faire

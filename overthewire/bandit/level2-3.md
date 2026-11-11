@@ -5,20 +5,20 @@ Lire un fichier dont le nom contient des espaces et commence par `--`.
 
 ## Comment j'ai fait
 1. Deux problèmes se cumulent :
-   - les **espaces** : le shell découpe la ligne de commande sur les espaces, donc le nom serait vu comme plusieurs arguments ;
-   - le **`--` au début** : `cat` croit recevoir une option longue (comme `--help`).
+   - les espaces : le shell découpe la ligne de commande sur les espaces, donc le nom serait vu comme plusieurs arguments ;
+   - le `--` au début : `cat` croit recevoir une option longue (comme `--help`).
 2. Il faut donc (a) garder le nom en un seul morceau et (b) empêcher `cat` de le lire comme une option.
 
 ## Les commandes et ce qu'elles font vraiment
 | Commande | Ce qu'elle fait |
 |---|---|
-| `"..."` (guillemets) | Indiquent au shell de traiter tout le texte comme **un seul argument**, espaces compris. |
+| `"..."` (guillemets) | Indiquent au shell de traiter tout le texte comme un seul argument, espaces compris. |
 | `cat < "--spaces in this filename--"` | La redirection fait ouvrir le fichier par le shell, `cat` ne voit jamais le nom : règle les deux problèmes. |
 | `cat ./"--spaces in this filename--"` | Le préfixe `./` fait commencer l'argument par `.` : ce n'est plus une option. |
 | `cat -- "--spaces in this filename--"` | `--` = « fin des options » (convention POSIX). Tout ce qui suit est traité comme un nom de fichier. |
 
 ## Autres façons de faire
-- **Touche Tab** : l'auto-complétion échappe automatiquement les espaces (`--spaces\ in\ this\ filename--`).
+- Touche Tab : l'auto-complétion échappe automatiquement les espaces (`--spaces\ in\ this\ filename--`).
 - Échapper chaque espace avec `\` à la main.
 - `more`/`less` avec les mêmes astuces (`./` ou `<`).
 

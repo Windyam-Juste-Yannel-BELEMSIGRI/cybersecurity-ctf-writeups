@@ -1,16 +1,16 @@
 # Bandit, niveau 23 → 24
 
 ## Le but
-Encore une tâche cron, mais cette fois il faut **écrire mon premier script shell**. L'énoncé prévient que le script sera supprimé une fois exécuté, donc il vaut mieux en garder une copie.
+Encore une tâche cron, mais cette fois il faut écrire mon premier script shell. L'énoncé prévient que le script sera supprimé une fois exécuté, donc il vaut mieux en garder une copie.
 
 ## Comment j'ai fait
 1. `cat /etc/cron.d/cronjob_bandit24` : la tâche lance `/usr/bin/cronjob_bandit24.sh` en tant que `bandit24`, toutes les minutes.
 2. Je lis le script. En résumé, il :
    - va dans `/var/spool/bandit24/foo` ;
    - pour chaque fichier de ce dossier, regarde son propriétaire avec `stat` ;
-   - si le propriétaire est `bandit23`, l'**exécute** (avec un délai max de 60 s via `timeout`) ;
-   - le **supprime** ensuite, qu'il ait été exécuté ou non.
-3. Donc : si je dépose dans ce dossier un script qui m'appartient, `bandit24` va l'exécuter avec **ses** droits. Il me suffit d'écrire un script qui copie `/etc/bandit_pass/bandit24` dans un endroit que je peux lire.
+   - si le propriétaire est `bandit23`, l'exécute (avec un délai max de 60 s via `timeout`) ;
+   - le supprime ensuite, qu'il ait été exécuté ou non.
+3. Donc : si je dépose dans ce dossier un script qui m'appartient, `bandit24` va l'exécuter avec ses droits. Il me suffit d'écrire un script qui copie `/etc/bandit_pass/bandit24` dans un endroit que je peux lire.
 4. Je prépare un dossier de travail que `bandit24` pourra remplir :
    ```bash
    cd "$(mktemp -d)"
@@ -22,7 +22,7 @@ Encore une tâche cron, mais cette fois il faut **écrire mon premier script she
    #!/bin/bash
    cat /etc/bandit_pass/bandit24 > /tmp/<mon dossier>/password
    ```
-6. Je le rends exécutable (`chmod +x pass.sh`), puis je le **copie** dans `/var/spool/bandit24/foo/`. Copier en tant que `bandit23` fait de moi le propriétaire de la copie, c'est la condition vérifiée par le script de cron.
+6. Je le rends exécutable (`chmod +x pass.sh`), puis je le copie dans `/var/spool/bandit24/foo/`. Copier en tant que `bandit23` fait de moi le propriétaire de la copie, c'est la condition vérifiée par le script de cron.
 7. J'attends au plus une minute, puis `cat password` dans mon dossier.
 
 ## Les commandes et ce qu'elles font vraiment
@@ -44,7 +44,7 @@ Encore une tâche cron, mais cette fois il faut **écrire mon premier script she
 Si rien n'apparaît après une minute : vérifier que le script est bien dans `foo/` (et pas dans `/var/spool/bandit24/`), qu'il est exécutable, et que le dossier de sortie est bien accessible en écriture à `bandit24`.
 
 ## À retenir
-- Une tâche planifiée qui **exécute** des fichiers déposés par d'autres utilisateurs, c'est une escalade de privilèges toute prête : quiconque peut écrire dans ce dossier exécute du code avec les droits du compte de la tâche.
+- Une tâche planifiée qui exécute des fichiers déposés par d'autres utilisateurs, c'est une escalade de privilèges toute prête : quiconque peut écrire dans ce dossier exécute du code avec les droits du compte de la tâche.
 - Les droits d'un dossier : `w` sans `r`, on peut y déposer un fichier sans pouvoir lister le contenu.
 - Les bases d'un script shell : shebang, droit d'exécution, redirection vers un fichier.
 

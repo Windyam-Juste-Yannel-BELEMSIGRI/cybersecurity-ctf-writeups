@@ -1,7 +1,7 @@
 # Bandit, niveau 17 → 18
 
 ## Le but
-Le mot de passe est **la seule ligne modifiée** entre `passwords.old` et `passwords.new`.
+Le mot de passe est la seule ligne modifiée entre `passwords.old` et `passwords.new`.
 
 ## Comment j'ai fait
 1. Les deux fichiers sont presque identiques : il faut un outil qui compare ligne par ligne.
@@ -12,7 +12,7 @@ Le mot de passe est **la seule ligne modifiée** entre `passwords.old` et `passw
 | Commande | Ce qu'elle fait |
 |---|---|
 | `ssh -i <clé> bandit17@... -p 2220` | Connexion avec la clé récupérée au niveau 16. |
-| `diff passwords.old passwords.new` | Compare les deux fichiers. Dans la sortie, `<` = ligne du **1er** fichier (old), `>` = ligne du **2ᵉ** fichier (new). `5c5` = « la ligne 5 a été changée ». |
+| `diff passwords.old passwords.new` | Compare les deux fichiers. Dans la sortie, `<` = ligne du 1er fichier (old), `>` = ligne du 2ᵉ fichier (new). `5c5` = « la ligne 5 a été changée ». |
 
 ## Autres façons de faire
 - `diff --color` ou `diff -u` (format *unified*, celui de git).

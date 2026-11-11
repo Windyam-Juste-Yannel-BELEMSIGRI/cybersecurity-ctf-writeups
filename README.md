@@ -10,7 +10,7 @@ Mes règles :
 
 | Dossier | Contenu | État |
 |---|---|---|
-| `overthewire/bandit/` | Bandit, un fichier par niveau | 0 → 21 fait |
+| `overthewire/bandit/` | Bandit, un fichier par niveau | 0 → 24 fait |
 | `overthewire/natas/` | Natas (web) | pas commencé, fichiers prêts |
 | `overthewire/leviathan` ... `vortex/` | Les autres wargames | dossiers vides pour l'instant |
 | `tryhackme/` | Mes notes de salles, en LaTeX (+ PDF) | 4 salles |
